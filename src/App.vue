@@ -4,12 +4,6 @@ import TheWelcome from "./components/TheWelcome.vue";
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <HelloWorld msg="Add an Order!" />
-    </div>
-  </header>
-
   <main>
     <TheWelcome />
   </main>
