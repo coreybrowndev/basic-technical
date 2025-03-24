@@ -2,15 +2,12 @@
   <div class="card-grid">
     <div v-for="card in cards" :key="card.id" class="card-wrapper" @click="flipCard(card)">
       <div :class="['flip-card-inner', { flipped: card.flipped }]">
-        <!-- FRONT -->
         <div class="flip-card-face flip-card-front">
           <Card>
             <template #title>{{ card.front }}</template>
             <p>{{ card.front }}</p>
           </Card>
         </div>
-
-        <!-- BACK -->
         <div class="flip-card-face flip-card-back">
           <Card>
             <template #title>{{ card.back }}</template>
